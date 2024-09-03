@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellowstone Parks & Resorts Application Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mb-4">
+            <img src="yellowstone.gif" alt="Yellowstone" class="img-fluid">
+        </div>
+
+        <h1 class="text-center mb-4">Application Form</h1>
+        <p class="text-center mb-4">If you need accommodation due to a disability or have difficulty with the
+            application, please contact the Human Resources team at (307) 344-5324.</p>
+
+        <div class="alert alert-info">
+            <h5>Important:</h5> Do not submit more than one application per season. For any changes to your application,
+            email <a href="mailto:info@yellowstonejobs.com">info@yellowstonejobs.com</a>.
+        </div>
+
+        <form id="applicationForm">
+            <div class="form-section mb-4">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="APL-FIRST-NAME" maxlength="15"
+                        size="15" required>
+                </div>
+                <div class="form-group">
+                    <label for="middleInitial">Middle Initial</label>
+                    <input type="text" class="form-control" id="middleInitial" name="APL-MIDDLE-INIT" maxlength="1"
+                        size="1">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="APL-LAST-NAME" maxlength="30" size="30"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="mailingAddress">Mailing Address</label>
+                    <input type="text" class="form-control" id="mailingAddress" name="APL-ADDR1" maxlength="30"
+                        size="50">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" name="APL-CITY" maxlength="18" size="18">
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <select id="state" name="APL-STATE" class="form-control">
+                        <option value="">Select State</option>
+                        <option>AL </option>
+                        <option>AK </option>
+                        <option>AZ </option>
+                        <option>AR </option>
+                        <option>CA </option>
+                        <option>CO </option>
+                        <option>CT </option>
+                        <option>DE </option>
+                        <option>DC </option>
+                        <option>FL </option>
+                        <option>GA </option>
+                        <option>HI </option>
+                        <option>ID </option>
+                        <option>IL </option>
+                        <option>IN </option>
+                        <option>IA </option>
+                        <option>KS </option>
+                        <option>KY </option>
+                        <option>LA </option>
+                        <option>ME </option>
+                        <option>MD </option>
+                        <option>MA </option>
+                        <option>MI </option>
+                        <option>MN </option>
+                        <option>MS </option>
+                        <option>MO </option>
+                        <option>MT </option>
+                        <option>NE </option>
+                        <option>NV </option>
+                        <option>NH </option>
+                        <option>NJ </option>
+                        <option>NM </option>
+                        <option>NY </option>
+                        <option>NC </option>
+                        <option>ND </option>
+                        <option>OH </option>
+                        <option>OK </option>
+                        <option>OR </option>
+                        <option>PA </option>
+                        <option>PR </option>
+                        <option>RI </option>
+                        <option>SC </option>
+                        <option>SD </option>
+                        <option>TN </option>
+                        <option>TX </option>
+                        <option>UT </option>
+                        <option>VT </option>
+                        <option>VA </option>
+                        <option>WA </option>
+                        <option>WV </option>
+                        <option>WI </option>
+                        <option>WY </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="zipCode">Zip Code</label>
+                    <input type="text" class="form-control" id="zipCode" name="APL-ZIP" maxlength="10" size="10">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="APL-COUNTRY-CODE" class="form-control">
+                        <option value="">Select Country</option>
+                        <option value="US">United States </option>
+                        <option value="AE">United Arab Emirates </option>
+                        <option value="AF">Afghanistan </option>
+                        <option value="AG">Antigua and Barbuda </option>
+                        <option value="AL">Albania </option>
+                        <option value="AM">Armenia </option>
+                        <option value="AM">Zambia </option>
+                        <option value="AN">Netherland Antilles </option>
+                        <option value="AQ">Antarctica </option>
+                        <option value="AR">Argentina </option>
+                        <option value="AS">American Samoa </option>
+                        <option value="AT">Austria </option>
+                        <option value="AU">Australia </option>
+                        <option value="AW">Aruba </option>
+                        <option value="AZ">Azerbaidjan </option>
+                        <option value="BA">Bosnia-Herzegovina </option>
+                        <option value="BB">Barbados </option>
+                        <option value="BD">Bangladesh </option>
+                        <option value="BE">Belgium </option>
+                        <option value="BG">Bulgaria </option>
+                        <option value="BH">Bahrain </option>
+                        <option value="BM">Bermuda </option>
+                        <option value="BO">Bolivia </option>
+                        <option value="BR">Brazil </option>
+                        <option value="BS">Bahamas </option>
+                        <option value="BW">Botswana </option>
+                        <option value="BY">Belarus </option>
+                        <option value="BZ">Belize </option>
+                        <option value="CA">Canada </option>
+                        <option value="CG">Congo </option>
+                        <option value="CH">Switzerland </option>
+                        <option value="CL">Chile </option>
+                        <option value="CM">Cameroon </option>
+                        <option value="CN">China </option>
+                        <option value="CO">Columbia </option>
+                        <option value="CR">Costa Rica </option>
+                        <option value="CS">Former Czechoslovakia </option>
+                        <option value="CZ">Czech Republic </option>
+                        <option value="DE">Germany </option>
+                        <option value="DK">Denmark </option>
+                        <option value="DM">Dominica </option>
+                        <option value="DO">Dominican Republic </option>
+                        <option value="DZ">Algeria </option>
+                        <option value="EC">Ecuador </option>
+                        <option value="EE">Estonia </option>
+                        <option value="EG">Egypt </option>
+                        <option value="ES">Spain </option>
+                        <option value="ET">Ethiopia </option>
+                        <option value="FI">Finland </option>
+                        <option value="FJ">Fiji </option>
+                        <option value="FK">Falkland Islands </option>
+                        <option value="FR">France </option>
+                        <option value="GB">Great Britain </option>
+                        <option value="GD">Grenada </option>
+                        <option value="GE">Georgia </option>
+                        <option value="GF">French Guyana </option>
+                        <option value="GH">Ghana </option>
+                        <option value="GL">Greenland </option>
+                        <option value="GN">Guinea </option>
+                        <option value="GR">Greece </option>
+                        <option value="GT">Guatamala </option>
+                        <option value="GU">Guam (USA) </option>
+                        <option value="GY">Guyana </option>
+                        <option value="HK">Hong Kong </option>
+                        <option value="HN">Honduras </option>
+                        <option value="HR">Croatia </option>
+                        <option value="HT">Haiti </option>
+                        <option value="HU">Hungary </option>
+                        <option value="ID">Indonesia </option>
+                        <option value="IE">Ireland </option>
+                        <option value="IL">Israel </option>
+                        <option value="IN">India </option>
+                        <option value="IQ">Iraq </option>
+                        <option value="IR">Iran </option>
+                        <option value="IS">Iceland </option>
+                        <option value="IT">Italy </option>
+                        <option value="JM">Jamaica </option>
+                        <option value="JO">Jordan </option>
+                        <option value="JP">Japan </option>
+                        <option value="KE">Kenya </option>
+                        <option value="KP">North Korea </option>
+                        <option value="KR">South Korea </option>
+                        <option value="KW">Kuwait </option>
+                        <option value="KY">Cayman Islands </option>
+                        <option value="KZ">Kazakhstan </option>
+                        <option value="LA">Laos </option>
+                        <option value="LB">Lebanon </option>
+                        <option value="LC">St. Lucia </option>
+                        <option value="LI">Liechtenstein </option>
+                        <option value="LK">Sri Lanka </option>
+                        <option value="LR">Liberia </option>
+                        <option value="LT">Lithuania </option>
+                        <option value="LU">Luxembourg </option>
+                        <option value="LV">Latvia </option>
+                        <option value="LY">Libya </option>
+                        <option value="MA">Morocco </option>
+                        <option value="MC">Monaco </option>
+                        <option value="MD">Moldavia </option>
+                        <option value="MG">Madagascar </option>
+                        <option value="YU">Macedonia </option>
+                        <option value="MN">Mongolia </option>
+                        <option value="MQ">Martinique (French) </option>
+                        <option value="MS">Montserrat </option>
+                        <option value="MT">Malta </option>
+                        <option value="MX">Mexico </option>
+                        <option value="MY">Malaysia </option>
+                        <option value="MZ">Mozambique </option>
+                        <option value="NA">Namibia </option>
+                        <option value="NG">Nigeria </option>
+                        <option value="NI">Nicaragua </option>
+                        <option value="NL">Netherlands </option>
+                        <option value="NO">Norway </option>
+                        <option value="NP">Nepal </option>
+                        <option value="NZ">New Zealand </option>
+                        <option value="PA">Panama </option>
+                        <option value="PE">Peru </option>
+                        <option value="PH">Phillipines </option>
+                        <option value="PK">Pakistan </option>
+                        <option value="PL">Poland </option>
+                        <option value="PR">Puerto Rico </option>
+                        <option value="PT">Portugal </option>
+                        <option value="PY">Paraguay </option>
+                        <option value="QA">Qatar </option>
+                        <option value="RO">Romania </option>
+                        <option value="RU">Russian Federation </option>
+                        <option value="RW">Rwanda </option>
+                        <option value="SA">Saudi Arabia </option>
+                        <option value="RS">Serbia </option>
+                        <option value="YU">Serbia and Montenegro </option>
+                        <option value="SD">Sudan </option>
+                        <option value="SE">Sweden </option>
+                        <option value="SG">Singapore </option>
+                        <option value="SI">Slovenia </option>
+                        <option value="SK">Slovak Republic </option>
+                        <option value="SN">Senegal </option>
+                        <option value="SO">Somalia </option>
+                        <option value="SR">Suriname </option>
+                        <option value="SV">El Salvador </option>
+                        <option value="SY">Syria </option>
+                        <option value="SZ">Swaziland </option>
+                        <option value="TC">Turks and Caicos Islands </option>
+                        <option value="TD">Chad </option>
+                        <option value="TH">Thailand </option>
+                        <option value="TJ">Tadjikistan </option>
+                        <option value="TM">Turkmenistan </option>
+                        <option value="TN">Tunisia </option>
+                        <option value="TR">Turkey </option>
+                        <option value="TT">Trinidad and Tabago </option>
+                        <option value="TW">Taiwan </option>
+                        <option value="TZ">Tanzania </option>
+                        <option value="UA">Ukraine </option>
+                        <option value="UG">Uganda </option>
+                        <option value="GB">United Kingdom </option>
+                        <option value="UY">Uruguay </option>
+                        <option value="UZ">Uzbekistan </option>
+                        <option value="VA">Vatican City </option>
+                        <option value="VC">St. Vincent &amp; Grenadines </option>
+                        <option value="VE">Venezuala </option>
+                        <option value="VG">Virgin Islands (British) </option>
+                        <option value="VI">Virgin Islands (USA) </option>
+                        <option value="VN">Vietnam </option>
+                        <option value="WS">Samoa </option>
+                        <option value="YE">Yemen </option>
+                        <option value="ZA">South Africa </option>
+                        <option value="ZR">Zaire </option>
+                        <option value="ZW">Zimbabwe </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section mb-4">
+                <h3>Positions Applied For</h3>
+                <div class="form-group">
+                    <label for="firstChoice">First Choice</label>
+                    <select id="firstChoice" name="App-Position1" class="form-control">
+                        <option value="">Select Position</option>
+                        <option>Dining Room Server Assistant*** </option>
+                                <option>Employee Dining Room Crew*** </option>
+                                <option>Fast Food Crew*** </option>
+                                <option>Kitchen Crew*** </option>
+                                <option>Laundry Help*** </option>
+                                <option>Room Attendant*** </option>
+                                <option>Activities Sales Agent </option>
+                                <option>Administrative Assistant Maintenance </option>
+                                <option>Asst. HR Manager </option>
+                                <option>Audit Clerk </option>
+                                <option>Bar Lead </option>
+                                <option>Barista </option>
+                                <option>Bartender </option>
+                                <option>Bell Porter </option>
+                                <option>Boiler Technician (D.L.) </option>
+                                <option>Bus Driver/Guide (D.L.) </option>
+                                <option>Bus Service Person (D.L.) </option>
+                                <option>Cafeteria Management </option>
+                                <option>Camper Services Attendants </option>
+                                <option>Campground Attendant (D.L.) </option>
+                                <option>Campground Management </option>
+                                <option>Carpenter (D.L.) </option>
+                                <option>Carpet Cleaning Technician (D.L.) </option>
+                                <option>Chef </option>
+                                <option>Cocktail Server </option>
+                                <option>Cook </option>
+                                <option>Cookout Entertainer </option>
+                                <option>Dining Room Host </option>
+                                <option>Dining Room Host Lead </option>
+                                <option>Dining Room Management </option>
+                                <option>Dining Room Server </option>
+                                <option>Distribution Center Associate </option>
+                                <option>Distribution Center Truck Driver (D.L.) </option>
+                                <option>Distribution Lead </option>
+                                <option>Dock Help (D.L.) </option>
+                                <option>Dorm Custodian </option>
+                                <option>Electrician (D.L.) </option>
+                                <option>Employee Dining Room Management </option>
+                                <option>Employee Pub Crew/Lead </option>
+                                <option>Fast Food Management </option>
+                                <option>Finish Floor Supervisor </option>
+                                <option>Fire Systems Technician (D.L.) </option>
+                                <option>Floor Cleaning Technician (D.L.) </option>
+                                <option>Food and Beverage Management </option>
+                                <option>Food and Beverage Office Assistant </option>
+                                <option>Front Office Management </option>
+                                <option>Furniture Mover (D.L.) </option>
+                                <option>General Accounting Office </option>
+                                <option>General Maintenance (D.L.) </option>
+                                <option>Guest Services Agent </option>
+                                <option>Guest Services Agent (Campground) </option>
+                                <option>Heavy Equipment Operator (D.L.) </option>
+                                <option>Housekeeping Management </option>
+                                <option>Housekeeping Room Inspector </option>
+                                <option>Housekeeping Trainer </option>
+                                <option>Housekeeping Office Assistant </option>
+                                <option>Housing Manager </option>
+                                <option>Internship </option>
+                                <option>Kitchen Technician (D.L.) </option>
+                                <option>Laundry Technician (D.L.) </option>
+                                <option>Laundry Truck Driver (D.L.) </option>
+                                <option>Linen Truck Driver  (D.L.) </option>
+                                <option>Location Controller/Assistant </option>
+                                <option>Locksmith (D.L.) </option>
+                                <option>Marina Fishing Guide (D.L.) </option>
+                                <option>Marina Manager (D.L.) </option>
+                                <option>Night Auditor </option>
+                                <option>Night Guest Services Agent </option>
+                                <option>Painter (D.L.) </option>
+                                <option>Pantry Supervisor </option>
+                                <option>Personnel Management </option>
+                                <option>Pianist </option>
+                                <option>Plumber (D.L.) </option>
+                                <option>Porter </option>
+                                <option>Preservation Maintenance Crew Craftsperson </option>
+                                <option>Recreation Coordinator (D.L.) </option>
+                                <option>Recreation Supervisor (D.L.) </option>
+                                <option>Recycling Technician (D.L.) </option>
+                                <option>Reservations Sales Agent </option>
+                                <option>Residence Coordinator </option>
+                                <option>Retail Management </option>
+                                <option>Retail Sales Associate </option>
+                                <option>R&amp;M Staff Assistant </option>
+                                <option>Scenic Cruise Operator (D.L.) </option>
+                                <option>Seamstress </option>
+                                <option>Security Guard And Location Safety (D.L.) </option>
+                                <option>Senior Guest Services Agent (Campground) </option>
+                                <option>Snack Shop / Deli Supervisor </option>
+                                <option>Sous Chef </option>
+                                <option>Steward </option>
+                                <option>Storekeeper </option>
+                                <option>Tour Guide (D.L.) </option>
+                                <option>Touring Car Driver- Interpretive Guide Non CDL (D.L.) </option>
+                                <option>Traveling Night Auditor </option>
+                                <option>Vending Clerk </option>
+                                <option>Vending Driver (D.L.) </option>
+                                <option>Vending Service Technician </option>
+                                <option>Warehouse Manager </option>
+                                <option>Warehouse Help </option>
+                                <option>Warehouse Driver (OFI) </option>
+                                <option>Wash Deck Supervisor </option>
+                                <option>Wash Deck Lead </option>
+                                <option>Wrangler/Driver </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="secondChoice">Second Choice</label>
+                    <select id="secondChoice" name="App-Position2" class="form-control">
+                        <option value="">Select Position</option>
+                        <option>Dining Room Server Assistant*** </option>
+                                <option>Employee Dining Room Crew*** </option>
+                                <option>Fast Food Crew*** </option>
+                                <option>Kitchen Crew*** </option>
+                                <option>Laundry Help*** </option>
+                                <option>Room Attendant*** </option>
+                                <option>Activities Sales Agent </option>
+                                <option>Administrative Assistant Maintenance </option>
+                                <option>Asst. HR Manager </option>
+                                <option>Audit Clerk </option>
+                                <option>Bar Lead </option>
+                                <option>Barista </option>
+                                <option>Bartender </option>
+                                <option>Bell Porter </option>
+                                <option>Boiler Technician (D.L.) </option>
+                                <option>Bus Driver/Guide (D.L.) </option>
+                                <option>Bus Service Person (D.L.) </option>
+                                <option>Cafeteria Management </option>
+                                <option>Camper Services Attendants </option>
+                                <option>Campground Attendant (D.L.) </option>
+                                <option>Campground Management </option>
+                                <option>Carpenter (D.L.) </option>
+                                <option>Carpet Cleaning Technician (D.L.) </option>
+                                <option>Chef </option>
+                                <option>Cocktail Server </option>
+                                <option>Cook </option>
+                                <option>Cookout Entertainer </option>
+                                <option>Dining Room Host </option>
+                                <option>Dining Room Host Lead </option>
+                                <option>Dining Room Management </option>
+                                <option>Dining Room Server </option>
+                                <option>Distribution Center Associate </option>
+                                <option>Distribution Center Truck Driver (D.L.) </option>
+                                <option>Distribution Lead </option>
+                                <option>Dock Help (D.L.) </option>
+                                <option>Dorm Custodian </option>
+                                <option>Electrician (D.L.) </option>
+                                <option>Employee Dining Room Management </option>
+                                <option>Employee Pub Crew/Lead </option>
+                                <option>Fast Food Management </option>
+                                <option>Finish Floor Supervisor </option>
+                                <option>Fire Systems Technician (D.L.) </option>
+                                <option>Floor Cleaning Technician (D.L.) </option>
+                                <option>Food and Beverage Management </option>
+                                <option>Food and Beverage Office Assistant </option>
+                                <option>Front Office Management </option>
+                                <option>Furniture Mover (D.L.) </option>
+                                <option>General Accounting Office </option>
+                                <option>General Maintenance (D.L.) </option>
+                                <option>Guest Services Agent </option>
+                                <option>Guest Services Agent (Campground) </option>
+                                <option>Heavy Equipment Operator (D.L.) </option>
+                                <option>Housekeeping Management </option>
+                                <option>Housekeeping Room Inspector </option>
+                                <option>Housekeeping Trainer </option>
+                                <option>Housekeeping Office Assistant </option>
+                                <option>Housing Manager </option>
+                                <option>Internship </option>
+                                <option>Kitchen Technician (D.L.) </option>
+                                <option>Laundry Technician (D.L.) </option>
+                                <option>Laundry Truck Driver (D.L.) </option>
+                                <option>Linen Truck Driver  (D.L.) </option>
+                                <option>Location Controller/Assistant </option>
+                                <option>Locksmith (D.L.) </option>
+                                <option>Marina Fishing Guide (D.L.) </option>
+                                <option>Marina Manager (D.L.) </option>
+                                <option>Night Auditor </option>
+                                <option>Night Guest Services Agent </option>
+                                <option>Painter (D.L.) </option>
+                                <option>Pantry Supervisor </option>
+                                <option>Personnel Management </option>
+                                <option>Pianist </option>
+                                <option>Plumber (D.L.) </option>
+                                <option>Porter </option>
+                                <option>Preservation Maintenance Crew Craftsperson </option>
+                                <option>Recreation Coordinator (D.L.) </option>
+                                <option>Recreation Supervisor (D.L.) </option>
+                                <option>Recycling Technician (D.L.) </option>
+                                <option>Reservations Sales Agent </option>
+                                <option>Residence Coordinator </option>
+                                <option>Retail Management </option>
+                                <option>Retail Sales Associate </option>
+                                <option>R&amp;M Staff Assistant </option>
+                                <option>Scenic Cruise Operator (D.L.) </option>
+                                <option>Seamstress </option>
+                                <option>Security Guard And Location Safety (D.L.) </option>
+                                <option>Senior Guest Services Agent (Campground) </option>
+                                <option>Snack Shop / Deli Supervisor </option>
+                                <option>Sous Chef </option>
+                                <option>Steward </option>
+                                <option>Storekeeper </option>
+                                <option>Tour Guide (D.L.) </option>
+                                <option>Touring Car Driver- Interpretive Guide Non CDL (D.L.) </option>
+                                <option>Traveling Night Auditor </option>
+                                <option>Vending Clerk </option>
+                                <option>Vending Driver (D.L.) </option>
+                                <option>Vending Service Technician </option>
+                                <option>Warehouse Manager </option>
+                                <option>Warehouse Help </option>
+                                <option>Warehouse Driver (OFI) </option>
+                                <option>Wash Deck Supervisor </option>
+                                <option>Wash Deck Lead </option>
+                                <option>Wrangler/Driver </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="thirdChoice">Third Choice</label>
+                    <select id="thirdChoice" name="App-Position3" class="form-control">
+                        <option value="">Select Position</option>
+                        <option>Dining Room Server Assistant*** </option>
+                                <option>Employee Dining Room Crew*** </option>
+                                <option>Fast Food Crew*** </option>
+                                <option>Kitchen Crew*** </option>
+                                <option>Laundry Help*** </option>
+                                <option>Room Attendant*** </option>
+                                <option>Activities Sales Agent </option>
+                                <option>Administrative Assistant Maintenance </option>
+                                <option>Asst. HR Manager </option>
+                                <option>Audit Clerk </option>
+                                <option>Bar Lead </option>
+                                <option>Barista </option>
+                                <option>Bartender </option>
+                                <option>Bell Porter </option>
+                                <option>Boiler Technician (D.L.) </option>
+                                <option>Bus Driver/Guide (D.L.) </option>
+                                <option>Bus Service Person (D.L.) </option>
+                                <option>Cafeteria Management </option>
+                                <option>Camper Services Attendants </option>
+                                <option>Campground Attendant (D.L.) </option>
+                                <option>Campground Management </option>
+                                <option>Carpenter (D.L.) </option>
+                                <option>Carpet Cleaning Technician (D.L.) </option>
+                                <option>Chef </option>
+                                <option>Cocktail Server </option>
+                                <option>Cook </option>
+                                <option>Cookout Entertainer </option>
+                                <option>Dining Room Host </option>
+                                <option>Dining Room Host Lead </option>
+                                <option>Dining Room Management </option>
+                                <option>Dining Room Server </option>
+                                <option>Distribution Center Associate </option>
+                                <option>Distribution Center Truck Driver (D.L.) </option>
+                                <option>Distribution Lead </option>
+                                <option>Dock Help (D.L.) </option>
+                                <option>Dorm Custodian </option>
+                                <option>Electrician (D.L.) </option>
+                                <option>Employee Dining Room Management </option>
+                                <option>Employee Pub Crew/Lead </option>
+                                <option>Fast Food Management </option>
+                                <option>Finish Floor Supervisor </option>
+                                <option>Fire Systems Technician (D.L.) </option>
+                                <option>Floor Cleaning Technician (D.L.) </option>
+                                <option>Food and Beverage Management </option>
+                                <option>Food and Beverage Office Assistant </option>
+                                <option>Front Office Management </option>
+                                <option>Furniture Mover (D.L.) </option>
+                                <option>General Accounting Office </option>
+                                <option>General Maintenance (D.L.) </option>
+                                <option>Guest Services Agent </option>
+                                <option>Guest Services Agent (Campground) </option>
+                                <option>Heavy Equipment Operator (D.L.) </option>
+                                <option>Housekeeping Management </option>
+                                <option>Housekeeping Room Inspector </option>
+                                <option>Housekeeping Trainer </option>
+                                <option>Housekeeping Office Assistant </option>
+                                <option>Housing Manager </option>
+                                <option>Internship </option>
+                                <option>Kitchen Technician (D.L.) </option>
+                                <option>Laundry Technician (D.L.) </option>
+                                <option>Laundry Truck Driver (D.L.) </option>
+                                <option>Linen Truck Driver  (D.L.) </option>
+                                <option>Location Controller/Assistant </option>
+                                <option>Locksmith (D.L.) </option>
+                                <option>Marina Fishing Guide (D.L.) </option>
+                                <option>Marina Manager (D.L.) </option>
+                                <option>Night Auditor </option>
+                                <option>Night Guest Services Agent </option>
+                                <option>Painter (D.L.) </option>
+                                <option>Pantry Supervisor </option>
+                                <option>Personnel Management </option>
+                                <option>Pianist </option>
+                                <option>Plumber (D.L.) </option>
+                                <option>Porter </option>
+                                <option>Preservation Maintenance Crew Craftsperson </option>
+                                <option>Recreation Coordinator (D.L.) </option>
+                                <option>Recreation Supervisor (D.L.) </option>
+                                <option>Recycling Technician (D.L.) </option>
+                                <option>Reservations Sales Agent </option>
+                                <option>Residence Coordinator </option>
+                                <option>Retail Management </option>
+                                <option>Retail Sales Associate </option>
+                                <option>R&amp;M Staff Assistant </option>
+                                <option>Scenic Cruise Operator (D.L.) </option>
+                                <option>Seamstress </option>
+                                <option>Security Guard And Location Safety (D.L.) </option>
+                                <option>Senior Guest Services Agent (Campground) </option>
+                                <option>Snack Shop / Deli Supervisor </option>
+                                <option>Sous Chef </option>
+                                <option>Steward </option>
+                                <option>Storekeeper </option>
+                                <option>Tour Guide (D.L.) </option>
+                                <option>Touring Car Driver- Interpretive Guide Non CDL (D.L.) </option>
+                                <option>Traveling Night Auditor </option>
+                                <option>Vending Clerk </option>
+                                <option>Vending Driver (D.L.) </option>
+                                <option>Vending Service Technician </option>
+                                <option>Warehouse Manager </option>
+                                <option>Warehouse Help </option>
+                                <option>Warehouse Driver (OFI) </option>
+                                <option>Wash Deck Supervisor </option>
+                                <option>Wash Deck Lead </option>
+                                <option>Wrangler/Driver </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section mb-4">
+                <h3>Work Experience</h3>
+                <div id="workExperience">
+                    <!-- added on button press -->
+                </div>
+                <button type="button" class="btn btn-secondary" id="addExperience">Add Experience</button>
+            </div>
+            <div class="form-section">
+                <h3>General Information</h3>
+                
+                <div class="form-section">
+                    <h3>General Information</h3>
+                
+                    <div class="form-group">
+                        <label>Have you ever worked for Xanterra Parks and Resorts, Amfac Park and Resorts, Fred Harvey or TWRS company?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workedBefore" id="workedYes" value="Yes">
+                            <label class="form-check-label" for="workedYes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workedBefore" id="workedNo" value="No">
+                            <label class="form-check-label" for="workedNo">No</label>
+                        </div>
+                    </div>
+                
+                    <div id="employmentDatesGroup" class="form-group" style="display:none;">
+                        <label for="dateStarted">Enter the date started:</label>
+                        <input type="date" class="form-control" id="dateStarted" name="dateStarted">
+                
+                        <div id="currentlyEmployedGroup" class="form-group" style="display:none;">
+                            <label>Are you currently employed?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="currentlyEmployed" id="currentlyEmployedYes" value="Yes">
+                                <label class="form-check-label" for="currentlyEmployedYes">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="currentlyEmployed" id="currentlyEmployedNo" value="No">
+                                <label class="form-check-label" for="currentlyEmployedNo">No</label>
+                            </div>
+                        </div>
+                
+                        <div id="dateEndedGroup" class="form-group">
+                            <label for="dateEnded">Enter the date ended:</label>
+                            <input type="date" class="form-control" id="dateEnded" name="dateEnded">
+                        </div>
+                    </div>
+
+                <div class="form-group">
+                    <label for="spouseNps">Are you a spouse, dependent, relative, or Domestic Partner of a National Park Service employee?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="spouseNps" id="spouseNpsYes" value="Yes">
+                        <label class="form-check-label" for="spouseNpsYes">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="spouseNps" id="spouseNpsNo" value="No">
+                        <label class="form-check-label" for="spouseNpsNo">
+                            No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group" id="npsDetailsGroup" style="display: none;">
+                    <label for="npsDetails">If yes, indicate the name(s) and location(s) of the NPS employee:</label>
+                    <input type="text" class="form-control" id="npsDetails" name="npsDetails">
+                </div>        
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                        <label class="form-check-label" for="agreeTerms">
+                            If you have read, understand and agree to the above information, please check this box 
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section mb-4">
+                <h3>Signature</h3>
+                <div class="form-group">
+                    <label for="signature">By typing your name below, you are electronically signing this
+                        application.</label>
+                    <input type="text" class="form-control" id="signature" name="signature" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
